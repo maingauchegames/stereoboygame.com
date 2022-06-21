@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MGG.006 - STEREO BOY</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-      html {
-        background-color: black;
-        font-family: "Roboto Condensed";
-        font-weight: 300;
-        color: white;
-      }
+<head>
+  <title>MGG.006 - STEREO BOY</title>
 
-      h1 {
-        font-weight: 300;
-        font-size: 200px;
-        line-height: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-      h1 span {
-        display: inline-block;
-        transform: rotateY(180deg);
-      }
+    html {
+      background-color: #20252D;
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      color: white;
+      height: 100%;
+    }
 
-      h2 {
-        font-weight: 300;
-        font-size: 64px;
-        line-height: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 10px;
-      }
+    body {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      margin: 0;
 
-    </style>
-  </head>
+      background-image: url('background.jpg');
+      background-size: cover;
+      /* focus on the 'boy */
+      background-position: center 30%;
+    }
 
-  <body>
-    <header>
-      <h1>STER<span>E</span>O BOY</h1>
-      <h2>SUMMER 2022</h2>
-    </header>
-  
-  </body>
+    #logo {
+      max-height: 228px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-center">
+    <img id="logo" src="logo-with-subtitle.png" />
+  </div>
+</body>
+
 </html>
