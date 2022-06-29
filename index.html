@@ -3,7 +3,7 @@
 
 <head>
   <title>MGG.006 - STEREO BOY</title>
-  <meta name="theme-color" content="#133a6f" />
+  <meta name="theme-color" content="#74c3e1" />
   <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,16 +17,18 @@
       font-family: "Roboto Condensed";
       font-weight: 300;
       height: 100%;
+      overflow-x: hidden;
+      max-width: 100%;
     }
 
     body {
-      width: 100%;
-      height: 100%;
+      min-height: 100%;
       border: 0;
       margin: 0;
       color: white;
+      position: relative;
 
-      background-image: url('background-edges.jpg');
+      background-image: url('background-edges-mobile.jpg');
       background-size: cover;
       /* focus on the 'boy */
       background-position: center 30%;
@@ -40,8 +42,7 @@
     }
 
     #content {
-      height: 100vh;
-      min-height: 100%;
+      min-height: calc(100vh - 80px);
     }
 
     #logo {
@@ -49,29 +50,32 @@
       max-width: 100%;
     }
 
+    #badge {
+      background-color: #133a6f;
+      opacity: 0.9;
+      border: 2px solid white;
+      margin-top: 80px;
+    }
+
+    #spacer {
+      min-height: 100px;
+    }
+
     footer {
-      background: #133a6f;
-      position: fixed;
+      background: #20252D;
+      position: absolute;
       bottom: 0;
+      padding: 0;
       width: 100%;
+      height: 50px;
     }
 
     #mgg {
       position: absolute;
-      right: -28px;
-      bottom: 120px;
-      transform: rotate(-0.25turn);
-
-      padding: 15px 15px;
-      font-size: 20px;
+      bottom: 60px;
+      width: 100%;
       font-family: Menlo, 'Courier New', Courier, monospace;
-      background: #20252D;
-      color: #F8F0D8;
-      border-top: 2px solid #F8F0D8;
-    }
-
-    .mt-n1 {
-      margin-top: -30px;
+      opacity: 0.5;
     }
   </style>
 </head>
@@ -82,25 +86,25 @@
       <img id="logo" src="logo-with-subtitle.png" />
     </div>
 
-    <div>
-      <p class="m-0"><img height="150" src="badge.png"></p>
-      <p class="mt-n1 mb-0"><img height="100" src="logos.png"></p>
+    <div class="d-flex flex-column align-items-center">
+      <div id="badge" class="rounded-4 shadow py-3 px-5">
+        <img height=50 src="badge-text.png">
+      </div>
+      <p class="mt-n1 mb-0"><img height=80 src="logos.png"></p>
     </div>
 
-    <div>&nbsp;</div>
+    <div id="spacer">&nbsp;</div>
   </div>
 
-  <footer class="p-3 text-center">
+  <div id="mgg" class="text-center">MGG.006</div>
+
+  <footer class="text-center d-flex justify-content-center align-items-center">
     <div class="container">
       Built with love by
       <a href="https://maingauche.games">Main Gauche Games</a>
       &#169; 2022
     </div>
   </footer>
-
-  <div id="mgg">
-    MGG.006
-  </div>
 </body>
 
 </html>
