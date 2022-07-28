@@ -79,12 +79,24 @@
       border: 2px solid white;
     }
 
+    #badge-link {
+      text-decoration: none;
+    }
+
+    #badge-link:hover #badge {
+      background-color: #31bb96;
+      text-decoration: underline;
+    }
+
+    #media {
+      margin-top: -50px;
+    }
+
     #media .container {
       padding: 0 15px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: -50px;
     }
 
     #media video {
@@ -104,6 +116,16 @@
       width: 100%;
       height: 50px;
     }
+
+    .wishlist-link,
+    .wishlist-link:visited {
+      color: rgb(66, 224, 238);
+      text-decoration: none;
+    }
+
+    .wishlist-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -115,10 +137,15 @@
       </div>
 
       <div class="d-flex flex-column align-items-center">
-        <div id="badge" class="rounded-4 shadow py-3 px-5">
-          <img height=50 src="badge-text.png">
-        </div>
-        <p class="mt-n1 mb-0"><img height=80 src="logos.png"></p>
+        <a id="badge-link" target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
+          <div id="badge" class="rounded-4 shadow py-3 px-5">
+            <img height=50 src="badge-text.png"><br>
+            <div class='text-center mt-2'>WISHLIST ON STEAM TODAY!</div>
+          </div>
+        </a>
+        <a target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
+          <p class="mt-n1 mb-0"><img height=80 src="logos.png"></p>
+        </a>
       </div>
 
     </div>
@@ -135,7 +162,8 @@
         <source src="media/shooting-v1.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
+    </div>
+    <div class="container">
       <video width="400" preload autoplay muted loop playsinline poster="">
         <source src="media/push-v1.mov" type="video/mp4" />
         Your browser does not support the video tag.
@@ -151,30 +179,37 @@
   </div>
 
   <div class="container">
-    <div class="col-6 offset-3 fs-4">
-      <p class="fs-1 text-center">
+    <div class="col-6 offset-3 fs-5 mt-4">
+      <p class="fs-1 fw-bold">
         Meet BLIT.
       </p>
       <p>
-        Lost on an unknown planet, he's trying to find his way home.
+        You are an explorer from a distant world. Your mission: to investigate a
+        newly discovered signal that could mean first contact with an alien
+        world.
       </p>
       <p>
-        Something has gone wrong - the planet is fractured into two parallel dimensions. Lucky for Blit, his engine can
-        harness the dimensional energy to jump between parallel worlds.
+        Something has gone wrong! Your expedition team is missing, and the
+        planet you've arrived on is has split into multiple dimensions. Lucky
+        for you, Blit's engine can harness the dimensional energy to jump
+        between the parallel worlds. Will you be able to navigate the mysterious
+        terrain, explore the planet's many secrets, and figure out what happened
+        to this world?
       </p>
       <p>
-        Help him navigate the unfamiliar terrain, explore its secrets, and solve mind-bending challenges across 50
-        levels of relaxing puzzling.
-
+        50+ levels of mind-bending exploration and puzzling stand between you
+        and getting home!
       </p>
       <p>
-        Coming Summer 2022
+        <a class="fw-bold wishlist-link" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
+          Coming Summer 2022. Wishlist TODAY!
+        </a>
       </p>
     </div>
 
   </div>
 
-  <footer class=" text-center d-flex justify-content-center align-items-center">
+  <footer class="text-center d-flex justify-content-center align-items-center mt-5">
     <div class="container">
       Built with love by
       <a href="https://maingauche.games">Main Gauche Games</a>
