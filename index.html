@@ -37,40 +37,46 @@
     #header .bg-container {
       background-image: url('background-edges-mobile-sm.jpg');
       background-position-x: center;
-      background-position-y: 15%;
       background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin: 0 auto;
-      height: 1000px;
+      height: 700px;
       padding-bottom: 100px;
 
     }
 
+    #logo {
+      max-height: 188px;
+      max-width: 100%;
+    }
+
     @media (max-width: 1300px) {
       #header .bg-container {
-        height: 800px;
+        height: 650px;
+      }
+
+      #logo {
+        max-height: 150px;
       }
     }
 
     @media (max-width: 700px) {
       #header .bg-container {
-        height: 600px;
+        height: 550px;
+      }
+
+      #logo {
+        max-height: 130px;
       }
     }
-
 
     a,
     a:hover,
     a:visited,
     a:active {
       color: white;
-    }
-
-    #logo {
-      max-height: 228px;
-      max-width: 100%;
     }
 
     #badge {
@@ -175,6 +181,51 @@
       background-image: url(gradient-4.png);
     }
 
+    .video-container {
+      position: relative;
+      margin: -240px auto 0;
+      width: 70%;
+      padding-bottom: 39.375%;
+    }
+
+
+    @media (max-width: 700px) {
+      .video-container {
+        width: 90%;
+        padding-bottom: 50.625%;
+      }
+    }
+
+    #trailer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      width: calc(100% - 6px);
+      height: 100%;
+      border: 0;
+      border-radius: 20px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .links-container {
+      padding: 8px;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .links-container a {
+      color: white;
+      text-decoration: none;
+      padding: 2px 8px 0;
+    }
+
+    .links-container a:hover {
+      text-decoration: underline;
+    }
+
     @media (min-width: 1300px) {
       .about-block {
         max-width: 900px;
@@ -210,36 +261,46 @@
 </head>
 
 <body>
+  <div class="links-container">
+    <a href="https://store.steampowered.com/app/2073530/Stereo_Boy/" target="_blank">Steam</a>
+    |
+    <a href="http://twitter.com/maingauchegames/" target="_blank">Twitter</a>
+    |
+    <a href="https://discord.gg/rR5cqduuyK" target=" _blank">Discord</a>
+    <!-- |
+    <a href="">Press Kit</a> -->
+  </div>
+
   <div id="header">
     <div class="bg-container">
       <div class="text-center">
         <img id="logo" src="logo-with-subtitle.png" />
       </div>
 
-      <div class="d-flex flex-column align-items-center">
-        <a id="badge-link" target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
-          <div id="badge" class="rounded-4 shadow py-3 px-5">
-            <img height=50 src="badge-text.png"><br>
-            <div class='text-center mt-2'>WISHLIST ON STEAM TODAY!</div>
-          </div>
-        </a>
-        <a target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
-          <p class="mt-n1 mb-0"><img height=80 src="logos.png"></p>
-        </a>
-      </div>
-
+      <div></div>
     </div>
+  </div>
+
+  <div class="video-container">
+    <iframe id="trailer" src="https://www.youtube-nocookie.com/embed/Gxo9DIQfEwU" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="d-flex flex-column align-items-center mt-3">
+    <a id="badge-link" target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
+      <div id="badge" class="text-center rounded-4 shadow py-3 px-5">
+        <img height=50 src="badge-text.png"><br>
+        <div class='mt-2'>WISHLIST ON STEAM TODAY!</div>
+      </div>
+    </a>
+    <a target="_blank" href="https://store.steampowered.com/app/2073530/Stereo_Boy/">
+      <p class="mt-n1 mb-0"><img height=80 src="logos.png"></p>
+    </a>
   </div>
 
   <div class="container">
     <div class="d-flex flex-column align-items-center fs-5 mt-4">
-      <!-- <div class="about-block">
-        <div class="fs-2">
-          Stereo Boy is a sci-fi adventure featuring mind-bending puzzles, a unique teleportation mechanic, and striking
-          isometric environments. Help Blit to unravel the mystery of Planet SO-671 and find a way home.
-          Jump between parallel worlds
-        </div>
-      </div> -->
       <div class="about-block background-1">
         <div>
           <h4>Jump between parallel worlds</h4>
@@ -294,10 +355,20 @@
   </div>
 
   <footer class="text-center d-flex justify-content-center align-items-center mt-5">
-    <div class="container">
-      Built with love by
-      <a href="https://maingauche.games">Main Gauche Games</a>
-      &#169; 2022
+    <div class="container pb-4">
+      <div class="links-container">
+        <a href="https://store.steampowered.com/app/2073530/Stereo_Boy/" target="_blank">Steam</a>
+        |
+        <a href="http://twitter.com/maingauchegames/" target="_blank">Twitter</a>
+        |
+        <a href="https://discord.gg/rR5cqduuyK" target=" _blank">Discord</a>
+      </div>
+
+      <div>
+        Built with love by
+        <a href="https://maingauche.games">Main Gauche Games</a>
+        &#169; 2022
+      </div>
     </div>
   </footer>
 </body>
