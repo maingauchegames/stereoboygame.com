@@ -88,6 +88,7 @@
       margin-bottom: 10px;
       padding-bottom: 5px;
       display: flex;
+      word-wrap: break-word;
     }
 
     #facts b {
@@ -96,86 +97,121 @@
       padding-right: 20px;
       width: 150px;
     }
+
+    #features li {
+      line-height: 1.75;
+      margin-bottom: 15px;
+    }
+
+    #features b {
+      color: #7fc0c6;
+    }
+
+    #presskit {
+      margin: 0 auto;
+      width: 85%;
+      max-width: 650px;
+    }
+
+    #presskit-trailer {
+      width: 100%;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+
+    #presskit-trailer #trailer {
+      border: none;
+      border-radius: 0;
+    }
+
+    @media (max-width: 640px) {
+      #content {
+        padding: 20px;
+      }
+
+      #facts li {
+        display: block;
+      }
+
+      .image-grid a {
+        width: 50%;
+      }
+
+      #presskit {
+        width: 95%;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="container pt-5 pb-5">
+  <div id="presskit" class="pt-5 pb-5">
     <div id="content">
       <a href="/">&larr; Home</a>
 
       <div>
         <img id="press-kit-logo" src="press-kit.png">
 
-        <p class="col-9">
-          <a href="https://drive.google.com/file/d/1BDUBU9fovsdRBb1ymq_3bPrMJ2I7fgAz/view?usp=sharing" class="btn btn-download">Download full press kit</a>
+        <p>
+          <a href="https://drive.google.com/file/d/1BDUBU9fovsdRBb1ymq_3bPrMJ2I7fgAz/view?usp=sharing"
+            class="btn btn-download">Download full press kit</a>
         </p>
 
-        <p class="col-9">
+        <p>
           Welcome to the <b>Stereo Boy</b> press page. If you're interested in a review key or don't see the
-          resources you need, feel free to reach out at <a href="mailto:info@maingauche.games">info@maingauche.games</a>.
+          resources you need, feel free to reach out at <a
+            href="mailto:info@maingauche.games">info@maingauche.games</a>.
         </p>
 
         <h3>Fact Sheet</h3>
 
-        <ul id="facts" class="col-9">
-          <li class="">
-            <b>Title:</b>
-            Stereo Boy
+        <ul id="facts">
+          <li>
+            <b>Title:</b> Stereo Boy
           </li>
 
-          <li class="">
-            <b>Developer:</b>
-            Main Gauche Games
+          <li>
+            <b>Developer:</b> Main Gauche Games
           </li>
 
-          <li class="">
-            <b>Genre:</b>
-            Puzzle adventure
+          <li>
+            <b>Genre:</b> Puzzle adventure
           </li>
 
-          <li class="">
-            <b>Platforms:</b>
-            Steam (Windows & Mac)
+          <li>
+            <b>Platforms:</b> Steam (Windows & Mac)
           </li>
 
-          <li class="">
-            <b>ESRB Rating:</b>
-            not rated
+          <li>
+            <b>ESRB Rating:</b> not rated
           </li>
 
-          <li class="">
-            <b>Release Date:</b>
-            August 9, 2022
+          <li>
+            <b>Release Date:</b> August 9, 2022
           </li>
 
-          <li class="">
-            <b>Price:</b>
-            $7.99
+          <li>
+            <b>Price:</b> $7.99
           </li>
 
-          <li class="">
-            <b>Developer:</b>
-            Main Gauche Games
+          <li>
+            <b>Developer:</b> Main Gauche Games
           </li>
 
-          <li class="">
+          <li>
             <b>Press contact:</b>
-
             <a href="mailto:info@maingauche.games">info@maingauche.games</a>
           </li>
 
-          <li class="">
+          <li>
             <b>Website:</b>
-
             <a href="https://stereoboygame.com">https://stereoboygame.com</a>
           </li>
 
-          <li class="">
+          <li>
             <b>Social:</b>
             <div>
-
               <a href="https://twitter.com/maingauchegames">https://twitter.com/maingauchegames</a>
               <br />
               <a href="https://www.facebook.com/maingauchegames/">https://www.facebook.com/maingauchegames/</a>
@@ -185,48 +221,63 @@
 
         <h3>Description</h3>
 
-        <p class="col-9">
+        <p>
           Stereo Boy is a sci-fi adventure featuring mind-bending puzzles, a
           unique teleportation mechanic, and striking, split-screen isometric
           environments.
         </p>
 
-        <p class="col-9">
-          Play as Blit, a plucky robot astronaut who’s stranded on a mysterious world split into two parallel dimensions. Blit can jump between these dimensions, allowing you to traverse seemingly-impossible terrain. Navigate mazes, solve puzzles, blast the occasional spiky alien thing, and help Blit find a way home!
+        <p>
+          Play as Blit, a plucky robot astronaut who’s stranded on a mysterious world split into two parallel
+          dimensions. Blit can jump between these dimensions, allowing you to traverse seemingly-impossible terrain.
+          Navigate mazes, solve puzzles, blast the occasional spiky alien thing, and help Blit find a way home!
         </p>
 
         <h3>Features</h3>
 
-        <ul class="col-9">
+        <ul id="features">
           <li>
-            <b>Single-player, split-screen gameplay</b>: Zig-zag between parallel worlds, using bridges and ramps in one world to access hard-to-reach areas in the other.
+            <b>Single-player, split-screen gameplay</b>: Zig-zag between parallel worlds, using bridges and ramps in one
+            world to access hard-to-reach areas in the other.
           </li>
           <li>
-            <b>Solve puzzles across dimensions</b>: Stereo Boy is chock-full of interlocking puzzle mechanics, requiring you to use Blit’s teleportation ability in increasingly creative and intricate ways.
-          </li>
-
-          <li>
-            <b>Light action, with a ray gun</b>: No space adventure would be complete without hostile alien baddies. Confront them head-on, or avoid them with some clever cross-dimensional footwork.
+            <b>Solve puzzles across dimensions</b>: Stereo Boy is chock-full of interlocking puzzle mechanics, requiring
+            you to use Blit’s teleportation ability in increasingly creative and intricate ways.
           </li>
 
           <li>
-            <b>Explore a lush, mysterious world:</b> Each of Stereo Boy’s 50+ levels is a unique, tightly-designed puzzle box. Collect shards to unlock bonus content, and discover dozens of logs depicting the tragic (and sometimes hilarious) last days of a lost civilization.
+            <b>Light action, with a ray gun</b>: No space adventure would be complete without hostile alien baddies.
+            Confront them head-on, or avoid them with some clever cross-dimensional footwork.
+          </li>
+
+          <li>
+            <b>Explore a lush, mysterious world:</b> Each of Stereo Boy’s 50+ levels is a unique, tightly-designed
+            puzzle box. Collect shards to unlock bonus content, and discover dozens of logs depicting the tragic (and
+            sometimes hilarious) last days of a lost civilization.
           </li>
         </ul>
 
         <h3>About the developer</h3>
 
-        <p class="col-9">
-          <a href="https://maingauche.games">Main Gauche Games</a> is an independent game studio founded in 2022 by a pair of Silicon Valley burnouts, Jeff Lee and Dominic Dagradi. They began making games as a pandemic side-hustle, producing hundreds of hours of game dev Twitch streams, along with a few game jam games that were actually kind of okay. Stereo Boy is their first full-time game project, as well as their first commercial release.
+        <p>
+          <a href="https://maingauche.games">Main Gauche Games</a> is an independent game studio founded in 2022 by a
+          pair of Silicon Valley burnouts, Jeff Lee and Dominic Dagradi. They began making games as a pandemic
+          side-hustle, producing hundreds of hours of game dev Twitch streams, along with a few game jam games that were
+          actually kind of okay. Stereo Boy is their first full-time game project, as well as their first commercial
+          release.
         </p>
 
-        <p class="col-9">The studio is headquartered in a Slack workspace straddling both US coasts. For the future, Main Gauche Games aspires to thoughtful cult hits, worker ownership, and a more decent and just society.</p>
+        <p>The studio is headquartered in a Slack workspace straddling both US coasts. For the future,
+          Main Gauche Games aspires to thoughtful cult hits, worker ownership, and a more decent and just society.</p>
 
         <h3>Trailer</h3>
 
-        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Gxo9DIQfEwU" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <div id="presskit-trailer">
+          <iframe id="trailer" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Gxo9DIQfEwU"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
 
         <h3>Screenshots</h3>
         <div class="image-grid">
@@ -246,7 +297,7 @@
           <a href="/press/gifs/levels.gif" target="_blank"><img src="/press/gifs/levels.gif"></a>
           <a href="/press/gifs/blink.gif" target="_blank"><img src="/press/gifs/blink.gif"></a>
         </div>
-        
+
         <h3>Key Art</h3>
         <div class="image-grid">
           <a href="/press/art/landscape.png" target="_blank"><img src="/press/art/landscape.png"></a>
